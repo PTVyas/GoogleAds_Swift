@@ -13,9 +13,16 @@
 		9F6CF89F2094523900208786 /* GoogleAds_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CF89D2094523900208786 /* GoogleAds_Swift.xcdatamodeld */; };
 		9F6CF8A12094523900208786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6CF8A02094523900208786 /* Assets.xcassets */; };
 		9F6CF8A42094523900208786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6CF8A22094523900208786 /* LaunchScreen.storyboard */; };
+		9F6CF8AE20945DA800208786 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CF8AC20945DA800208786 /* AppConstant.swift */; };
+		9F6CF8AF20945DA800208786 /* MyFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CF8AD20945DA800208786 /* MyFunction.swift */; };
+		9F6CF8B120945ED000208786 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6CF8B020945ECF00208786 /* GoogleService-Info.plist */; };
+		AAA00F230032546E4530175A /* Pods_GoogleAds_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44347F29B9AFF1757321779F /* Pods_GoogleAds_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44347F29B9AFF1757321779F /* Pods_GoogleAds_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAds_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465818B8EA7A0DA4F4A07BC6 /* Pods-GoogleAds_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleAds_Swift/Pods-GoogleAds_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		4AE5CA3C8BB1087164500ADD /* Pods-GoogleAds_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleAds_Swift/Pods-GoogleAds_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		9F6CF8932094523900208786 /* GoogleAds_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAds_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6CF8962094523900208786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6CF8982094523900208786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		9F6CF8A02094523900208786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6CF8A32094523900208786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6CF8A52094523900208786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6CF8AC20945DA800208786 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		9F6CF8AD20945DA800208786 /* MyFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFunction.swift; sourceTree = "<group>"; };
+		9F6CF8B020945ECF00208786 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA00F230032546E4530175A /* Pods_GoogleAds_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40FF5697A50D2B08B1BA80A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AE5CA3C8BB1087164500ADD /* Pods-GoogleAds_Swift.debug.xcconfig */,
+				465818B8EA7A0DA4F4A07BC6 /* Pods-GoogleAds_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		558BDAF2166D7568B366B080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44347F29B9AFF1757321779F /* Pods_GoogleAds_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F6CF88A2094523900208786 = {
 			isa = PBXGroup;
 			children = (
 				9F6CF8952094523900208786 /* GoogleAds_Swift */,
 				9F6CF8942094523900208786 /* Products */,
+				40FF5697A50D2B08B1BA80A9 /* Pods */,
+				558BDAF2166D7568B366B080 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +87,41 @@
 			isa = PBXGroup;
 			children = (
 				9F6CF8962094523900208786 /* AppDelegate.swift */,
-				9F6CF8982094523900208786 /* ViewController.swift */,
-				9F6CF89A2094523900208786 /* Main.storyboard */,
+				9F6CF8B22094717200208786 /* ViewController */,
+				9F6CF8B32094718100208786 /* View */,
+				9F6CF8AB20945D8900208786 /* Modal */,
 				9F6CF8A02094523900208786 /* Assets.xcassets */,
-				9F6CF8A22094523900208786 /* LaunchScreen.storyboard */,
+				9F6CF8B020945ECF00208786 /* GoogleService-Info.plist */,
 				9F6CF8A52094523900208786 /* Info.plist */,
 				9F6CF89D2094523900208786 /* GoogleAds_Swift.xcdatamodeld */,
 			);
 			path = GoogleAds_Swift;
+			sourceTree = "<group>";
+		};
+		9F6CF8AB20945D8900208786 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CF8AC20945DA800208786 /* AppConstant.swift */,
+				9F6CF8AD20945DA800208786 /* MyFunction.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		9F6CF8B22094717200208786 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CF8982094523900208786 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9F6CF8B32094718100208786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CF8A22094523900208786 /* LaunchScreen.storyboard */,
+				9F6CF89A2094523900208786 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F6CF8A82094523900208786 /* Build configuration list for PBXNativeTarget "GoogleAds_Swift" */;
 			buildPhases = (
+				0EE512EA62AE2390EA88744D /* [CP] Check Pods Manifest.lock */,
 				9F6CF88F2094523900208786 /* Sources */,
 				9F6CF8902094523900208786 /* Frameworks */,
 				9F6CF8912094523900208786 /* Resources */,
+				554BDD48BB7BEC530073BAA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,12 +186,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6CF8A42094523900208786 /* LaunchScreen.storyboard in Resources */,
+				9F6CF8B120945ED000208786 /* GoogleService-Info.plist in Resources */,
 				9F6CF8A12094523900208786 /* Assets.xcassets in Resources */,
 				9F6CF89C2094523900208786 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EE512EA62AE2390EA88744D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAds_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		554BDD48BB7BEC530073BAA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAds_Swift/Pods-GoogleAds_Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAds_Swift/Pods-GoogleAds_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F6CF88F2094523900208786 /* Sources */ = {
@@ -141,7 +242,9 @@
 			files = (
 				9F6CF89F2094523900208786 /* GoogleAds_Swift.xcdatamodeld in Sources */,
 				9F6CF8992094523900208786 /* ViewController.swift in Sources */,
+				9F6CF8AF20945DA800208786 /* MyFunction.swift in Sources */,
 				9F6CF8972094523900208786 /* AppDelegate.swift in Sources */,
+				9F6CF8AE20945DA800208786 /* AppConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,11 +379,13 @@
 		};
 		9F6CF8A92094523900208786 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE5CA3C8BB1087164500ADD /* Pods-GoogleAds_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 228777C638;
 				INFOPLIST_FILE = GoogleAds_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "WOS.GoogleAds-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,11 +396,13 @@
 		};
 		9F6CF8AA2094523900208786 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465818B8EA7A0DA4F4A07BC6 /* Pods-GoogleAds_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 228777C638;
 				INFOPLIST_FILE = GoogleAds_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "WOS.GoogleAds-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
