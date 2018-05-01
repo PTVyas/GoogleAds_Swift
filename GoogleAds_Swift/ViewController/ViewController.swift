@@ -27,9 +27,9 @@ class ViewController: UIViewController, GADBannerViewDelegate, GADInterstitialDe
         //Google Ads
         //print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
         
-        /*self.Google_AdsMob_Banner(view: viewBanner_1)
+        self.Google_AdsMob_Banner(view: viewBanner_1)
         self.Google_AdsMob_Banner(view: viewBanner_2)
-        self.Google_AdsMob_Banner(view: viewBanner_3)*/
+        self.Google_AdsMob_Banner(view: viewBanner_3)
         self.Google_AdsMob_Banner(view: viewBanner_4)
         
         self.Google_AdsMob_FullScreen()
